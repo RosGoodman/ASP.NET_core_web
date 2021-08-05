@@ -43,23 +43,50 @@ namespace Lesson_1
             var tasks = new List<Task<PostModel>>();
             List<string> postsStr = new List<string>();
 
-            await Task.Run(() =>
-            {
-                for (var i = 4; i <= 13; i++)
-                {
-                    tasks.Add(GetPost(i));
-                }
-            });
+            #region тут 10 запросов выполненных асинхронно
 
-            foreach (var task in tasks)
+            //await Task.Run(() =>
+            //{
+            //    for (var i = 4; i <= 13; i++)
+            //    {
+            //        tasks.Add(GetPost(i));
+            //    }
+            //});
+
+            //foreach (var task in tasks)
+            //{
+            //    var result = task.Result;
+            //    postsStr.Add(result.UserId.ToString());
+            //    postsStr.Add(result.Id.ToString());
+            //    postsStr.Add(result.Title);
+            //    postsStr.Add(result.Body);
+            //    postsStr.Add(string.Empty);
+            //}
+
+            #endregion
+
+            #region тут 10 асинхронных (каждый) запросов
+
+            var tasks2 = new List<PostModel>();
+
+            for (var i = 4; i <= 13; i++)
             {
-                var result = task.Result;
-                postsStr.Add(result.UserId.ToString());
-                postsStr.Add(result.Id.ToString());
-                postsStr.Add(result.Title);
-                postsStr.Add(result.Body);
+                var responce = await Task.Run(() => GetPost(i));
+                tasks2.Add(responce);
+            }
+
+            Task.WaitAll();
+
+            foreach (var task in tasks2)
+            {
+                postsStr.Add(task.UserId.ToString());
+                postsStr.Add(task.Id.ToString());
+                postsStr.Add(task.Title);
+                postsStr.Add(task.Body);
                 postsStr.Add(string.Empty);
             }
+
+            #endregion
 
             return postsStr;
         }
