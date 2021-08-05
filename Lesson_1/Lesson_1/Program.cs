@@ -43,13 +43,13 @@ namespace Lesson_1
             var tasks = new List<Task<PostModel>>();
             List<string> postsStr = new List<string>();
 
-            _cts.CancelAfter(2000);
-            for (var i = 4; i <= 13; i++)
+            await Task.Run(() =>
             {
-                tasks.Add(GetPost(i));
-            }
-
-            await Task.WhenAll(tasks);
+                for (var i = 4; i <= 13; i++)
+                {
+                    tasks.Add(GetPost(i));
+                }
+            });
 
             foreach (var task in tasks)
             {
