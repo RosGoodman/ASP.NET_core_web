@@ -45,58 +45,58 @@ namespace Lesson_1
 
             #region тут 10 запросов выполненных асинхронно
 
-            //await Task.Run(() =>
-            //{
-            //    for (var i = 4; i <= 13; i++)
-            //    {
-            //        try
-            //        {
-            //            tasks.Add(GetPost(i));
-            //        }
-            //        catch (Exception e)
-            //        {
-            //            Console.WriteLine(e);
-            //        }
-            //    }
-            //});
+            await Task.Run(async () =>
+            {
+                for (var i = 4; i <= 13; i++)
+                {
+                    try
+                    {
+                        tasks.Add(GetPost(i));
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e);
+                    }
+                }
+            });
 
-            //foreach (var task in tasks)
-            //{
-            //    var result = task.Result;
-            //    postsStr.Add(result.UserId.ToString());
-            //    postsStr.Add(result.Id.ToString());
-            //    postsStr.Add(result.Title);
-            //    postsStr.Add(result.Body);
-            //    postsStr.Add(string.Empty);
-            //}
+            foreach (var task in tasks)
+            {
+                var result = task.Result;
+                postsStr.Add(result.UserId.ToString());
+                postsStr.Add(result.Id.ToString());
+                postsStr.Add(result.Title);
+                postsStr.Add(result.Body);
+                postsStr.Add(string.Empty);
+            }
 
             #endregion
 
             #region тут 10 асинхронных (каждый) запросов
 
-            var tasks2 = new List<PostModel>();
+            //var tasks2 = new List<PostModel>();
 
-            for (var i = 4; i <= 13; i++)
-            {
-                try
-                {
-                    var responce = await Task.Run(() => GetPost(i));
-                    tasks2.Add(responce);
-                }
-                catch(AggregateException e)
-                {
-                    Console.WriteLine(e);
-                }
-            }
+            //for (var i = 4; i <= 13; i++)
+            //{
+            //    try
+            //    {
+            //        var responce = await Task.Run(() => GetPost(i));
+            //        tasks2.Add(responce);
+            //    }
+            //    catch(AggregateException e)
+            //    {
+            //        Console.WriteLine(e);
+            //    }
+            //}
 
-            foreach (var task in tasks2)
-            {
-                postsStr.Add(task.UserId.ToString());
-                postsStr.Add(task.Id.ToString());
-                postsStr.Add(task.Title);
-                postsStr.Add(task.Body);
-                postsStr.Add(string.Empty);
-            }
+            //foreach (var task in tasks2)
+            //{
+            //    postsStr.Add(task.UserId.ToString());
+            //    postsStr.Add(task.Id.ToString());
+            //    postsStr.Add(task.Title);
+            //    postsStr.Add(task.Body);
+            //    postsStr.Add(string.Empty);
+            //}
 
             #endregion
 
