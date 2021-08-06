@@ -49,7 +49,14 @@ namespace Lesson_1
             //{
             //    for (var i = 4; i <= 13; i++)
             //    {
-            //        tasks.Add(GetPost(i));
+            //        try
+            //        {
+            //            tasks.Add(GetPost(i));
+            //        }
+            //        catch (Exception e)
+            //        {
+            //            Console.WriteLine(e);
+            //        }
             //    }
             //});
 
@@ -71,8 +78,15 @@ namespace Lesson_1
 
             for (var i = 4; i <= 13; i++)
             {
-                var responce = await Task.Run(() => GetPost(i));
-                tasks2.Add(responce);
+                try
+                {
+                    var responce = await Task.Run(() => GetPost(i));
+                    tasks2.Add(responce);
+                }
+                catch(Exception e)
+                {
+                    Console.WriteLine(e);
+                }
             }
 
             foreach (var task in tasks2)
