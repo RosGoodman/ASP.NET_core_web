@@ -83,7 +83,7 @@ namespace Lesson_1
                     var responce = await Task.Run(() => GetPost(i));
                     tasks2.Add(responce);
                 }
-                catch(Exception e)
+                catch(AggregateException e)
                 {
                     Console.WriteLine(e);
                 }
