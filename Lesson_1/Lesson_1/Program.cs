@@ -75,8 +75,6 @@ namespace Lesson_1
                 tasks2.Add(responce);
             }
 
-            Task.WaitAll();
-
             foreach (var task in tasks2)
             {
                 postsStr.Add(task.UserId.ToString());
