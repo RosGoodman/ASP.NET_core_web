@@ -1,21 +1,19 @@
 ﻿using HomeWork.Models;
 using HomeWork.Repositoryes;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace HomeWork.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ExampleController
+    public class ExampleController : ControllerBase
     {
         [HttpGet]
         public IEnumerable<int> GetNumbers()
         {
-            return Enumerable.Range(0, 100);
+            return null;
         }
     }
 
@@ -38,16 +36,16 @@ namespace HomeWork.Controllers
     [Route("/api/contract")]
     public class ContractController
     {
-        [HttpGet("/")]
+        [HttpGet("/getContracts")]
         public IEnumerable<int> Get()
         {
             return Enumerable.Range(0, 100);
         }
 
         [HttpPost("/{id}/task")]
-        public void AddTask([FromRoute] Task task)
+        public int AddTask([FromRoute] string task)
         {
-            //add
+            return -1;
         }
 
         [HttpGet("/contract/{id}")]
