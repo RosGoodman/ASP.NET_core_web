@@ -17,21 +17,21 @@ namespace HomeWork.Controllers
         }
     }
 
-    [Route("/api/employye")]
-    public class EmployeeController
-    {
-        [HttpGet("/")]
-        public IEnumerable<int> Get()
-        {
-            return Enumerable.Range(0, 100);
-        }
+    //[Route("/api/employye")]
+    //public class EmployeeController
+    //{
+    //    [HttpGet("/")]
+    //    public IEnumerable<int> Get()
+    //    {
+    //        return Enumerable.Range(0, 100);
+    //    }
 
-        [HttpPost("name/{name}/secName/{secName}/company/{company}")]
-        public Employee Create([FromRoute] string name, [FromRoute] string secName, [FromRoute] string company)
-        {
-            return new Employee(name, secName, company);
-        }
-    }
+    //    [HttpPost("name/{name}/secName/{secName}/company/{company}")]
+    //    public Employee Create([FromRoute] string name, [FromRoute] string secName, [FromRoute] string company)
+    //    {
+    //        return new Employee(name, secName, company);
+    //    }
+    //}
 
     [Route("/api/contract")]
     public class ContractController
