@@ -7,8 +7,8 @@ namespace HomeWork.Repositoryes
         public Contract GetContractById(long id)
         {
             //TODO: тут сделать получение контракта из бд
-            Contract c = new Contract();
-            return c;
+            //Contract c = new Contract();
+            return null;
         }
     }
 }
