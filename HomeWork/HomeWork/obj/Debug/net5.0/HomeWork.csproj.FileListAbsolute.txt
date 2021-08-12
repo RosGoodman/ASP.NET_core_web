@@ -1,0 +1,59 @@
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.AssemblyInfoInputs.cache
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.AssemblyInfo.cs
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.csproj.CoreCompileInputs.cache
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user252\source\repos\HomeWork\HomeWork\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\user252\source\repos\HomeWork\HomeWork\bin\Debug\net5.0\appsettings.json
+C:\Users\user252\source\repos\HomeWork\HomeWork\bin\Debug\net5.0\HomeWork.exe
+C:\Users\user252\source\repos\HomeWork\HomeWork\bin\Debug\net5.0\HomeWork.deps.json
+C:\Users\user252\source\repos\HomeWork\HomeWork\bin\Debug\net5.0\HomeWork.runtimeconfig.json
+C:\Users\user252\source\repos\HomeWork\HomeWork\bin\Debug\net5.0\HomeWork.runtimeconfig.dev.json
+C:\Users\user252\source\repos\HomeWork\HomeWork\bin\Debug\net5.0\HomeWork.dll
+C:\Users\user252\source\repos\HomeWork\HomeWork\bin\Debug\net5.0\ref\HomeWork.dll
+C:\Users\user252\source\repos\HomeWork\HomeWork\bin\Debug\net5.0\HomeWork.pdb
+C:\Users\user252\source\repos\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\user252\source\repos\HomeWork\HomeWork\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\user252\source\repos\HomeWork\HomeWork\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\user252\source\repos\HomeWork\HomeWork\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\staticwebassets\HomeWork.StaticWebAssets.Manifest.cache
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\staticwebassets\HomeWork.StaticWebAssets.xml
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\scopedcss\bundle\HomeWork.styles.css
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.RazorTargetAssemblyInfo.cache
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.csproj.CopyComplete
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.dll
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\ref\HomeWork.dll
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.pdb
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.genruntimeconfig.cache
+C:\Users\user252\source\repos\HomeWork\HomeWork\bin\Debug\net5.0\HomeWork.xml
+C:\Users\user252\source\repos\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.xml
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\appsettings.json
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\HomeWork.exe
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\HomeWork.deps.json
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\HomeWork.runtimeconfig.json
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\HomeWork.runtimeconfig.dev.json
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\HomeWork.dll
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\ref\HomeWork.dll
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\HomeWork.pdb
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.AssemblyInfoInputs.cache
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.AssemblyInfo.cs
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.csproj.CoreCompileInputs.cache
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\staticwebassets\HomeWork.StaticWebAssets.Manifest.cache
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\staticwebassets\HomeWork.StaticWebAssets.xml
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\scopedcss\bundle\HomeWork.styles.css
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.RazorTargetAssemblyInfo.cache
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.csproj.CopyComplete
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.dll
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\ref\HomeWork.dll
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.pdb
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.genruntimeconfig.cache
+C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.csproj.AssemblyReference.cache
