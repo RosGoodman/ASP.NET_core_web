@@ -23,19 +23,19 @@ namespace HomeWork.Models
             _secondName = secondName;
         }
 
-        /// <summary>Конструктор для получения заказчика из БД. (id должно присваиваться БД автоматически)</summary>
-        /// <param name="id">id заказчика.</param>
-        /// <param name="juristicPerson">Юридическое лицо (true), физическое лицо (false)</param>
-        /// <param name="nameCustCompany">Наименование компании заказчика.</param>
-        /// <param name="firstName">Имя заказчика/ответственного лица.</param>
-        /// <param name="secondName">Фамилия заказчика/ответственного лица.</param>
-        public Customer(long id, bool juristicPerson, string nameCustCompany, string firstName, string secondName)
-        {
-            _id = id;
-            _juristicPerson = juristicPerson;
-            _nameCustCompany = nameCustCompany;
-            _firstName = firstName;
-            _secondName = secondName;
-        }
+        ///// <summary>Конструктор для получения заказчика из БД. (id должно присваиваться БД автоматически)</summary>
+        ///// <param name="id">id заказчика.</param>
+        ///// <param name="juristicPerson">Юридическое лицо (true), физическое лицо (false)</param>
+        ///// <param name="nameCustCompany">Наименование компании заказчика.</param>
+        ///// <param name="firstName">Имя заказчика/ответственного лица.</param>
+        ///// <param name="secondName">Фамилия заказчика/ответственного лица.</param>
+        //public Customer(long id, bool juristicPerson, string nameCustCompany, string firstName, string secondName)
+        //{
+        //    _id = id;
+        //    _juristicPerson = juristicPerson;
+        //    _nameCustCompany = nameCustCompany;
+        //    _firstName = firstName;
+        //    _secondName = secondName;
+        //}
     }
 }

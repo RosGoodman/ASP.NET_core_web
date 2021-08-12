@@ -1,3 +1,5 @@
+using HomeWork.DAL.Rapositories;
+using HomeWork.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +34,8 @@ namespace HomeWork
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "HomeWork", Version = "v1" });
             });
+
+            services.AddSingleton<IEmployeeRepository<Employee>, EmployeeRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

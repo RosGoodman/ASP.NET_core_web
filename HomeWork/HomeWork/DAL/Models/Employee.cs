@@ -1,19 +1,38 @@
 ﻿
-using HomeWork.DAL.Models;
 using System;
 
 namespace HomeWork.Models
 {
     /// <summary>Модель, описывающая сотрудника.</summary>
-    public class Employee : Person
+    public class Employee
     {
-        private long _employeeID;   //id сотрудника.
-        private string _post;       //должность.
+        private string _firstName;  //имя сотрудника.
+        private string _secondName; //фамилия сотрудника.
+        private string _gender;     //пол
+        private DateTime _birthday; //дата рождения.
 
-        public Employee(string post, string name, string secName, string gender, DateTime birthday)
-            : base(name, secName, gender, birthday)
+        private long _employeeID;   //id сотрудника.
+        private int _postId;       //должность.
+
+        public string FirstName
         {
-            _post = post;
+            get { return _firstName; }
+        }
+
+        public Employee(string name, string secName, string gender, DateTime birthday, int postId)
+        {
+            _firstName = name;
+            _secondName = secName;
+            _gender = gender;
+            _birthday = birthday;
+
+            _postId = postId;
+        }
+
+        //TODO: удалить потом
+        public Employee()
+        {
+            _firstName = "Ivan";
         }
     }
 }

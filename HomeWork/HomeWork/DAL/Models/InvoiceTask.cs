@@ -5,7 +5,7 @@ namespace HomeWork.Models
     /// <summary>Модель описывает состояние задач по накладной.</summary>
     public class InvoiceTask
     {
-        private double _id
+        private double _id;
         private long _invoiceID;    //id накладной.
         private Dictionary<int, Dictionary<long, int>> _idTaskEmployees;    //<id задачи, <id сотрудника, время работы>>
 

@@ -21,17 +21,17 @@ namespace HomeWork.Models
             _contractText = contractText;
         }
 
-        /// <summary>Модель для получения контракта из БД.</summary>
-        /// <param name="id">id контракта.</param>
-        /// <param name="idCustomer">id заказчика.</param>
-        /// <param name="_contractDate">Дата заключения контракта.</param>
-        /// <param name="contractText">Текст контракта.</param>
-        public Contract(long id, long idCustomer, DateTimeOffset contractDate, string contractText)
-        {
-            _id = id;
-            _idCustomer = idCustomer;
-            _contractDate = contractDate;
-            _contractText = contractText;
-        }
+        ///// <summary>Модель для получения контракта из БД.</summary>
+        ///// <param name="id">id контракта.</param>
+        ///// <param name="idCustomer">id заказчика.</param>
+        ///// <param name="_contractDate">Дата заключения контракта.</param>
+        ///// <param name="contractText">Текст контракта.</param>
+        //public Contract(long id, long idCustomer, DateTimeOffset contractDate, string contractText)
+        //{
+        //    _id = id;
+        //    _idCustomer = idCustomer;
+        //    _contractDate = contractDate;
+        //    _contractText = contractText;
+        //}
     }
 }
