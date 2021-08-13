@@ -17,36 +17,35 @@ namespace HomeWork.Controllers
             _repository = repository;
         }
 
-        [HttpGet("getAllEmployees")]
-        public IActionResult GetAllEmployees()
-        {
-            var result = _repository.GetById(2);
-
-            return StatusCode(200);
-        }
-
-        [HttpGet("getEmployeeById/id/{id}")]
-        public IActionResult GetEmployeeById([FromRoute]long id)
+        /// <summary>Получить текущие данные и задачи сотрудника.</summary>
+        /// <param name="id">id сотрудника.</param>
+        /// <returns>Список задач.</returns>
+        [HttpGet("getById/id/{id}")]
+        public IActionResult GetById(long id)
         {
             var result = _repository.GetById(id);
             return StatusCode(200);
         }
 
-        /// <summary>Получить текущие задачи сотрудника.</summary>
-        /// <param name="id">id сотрудника.</param>
-        /// <returns>Список задач.</returns>
-        [HttpGet("getEmployeeInfo/id/{id}")]
-        public IActionResult GetEmployeeTask(long id)
+        /// <summary>Установить новую задачу для сотрудника.</summary>
+        /// <param name="empliyeeId">ID сотрудника.</param>
+        /// <param name="taskId">ID задачи.</param>
+        /// <returns></returns>
+        [HttpPost("setTaskForEmployee/employeeId/{employeeId}/taskId/{taskId}")]
+        public IActionResult CrateEmployee(long empliyeeId, int taskId)
         {
-            var result = _repository.GetEmployeeInfoById(id);
+            _repository.SetNewTaskForEmployee(empliyeeId, taskId);
             return StatusCode(200);
         }
 
-        [HttpPost("createEmployee/name/{name}/secName/{secName}/gender/{gender}/birthday/{birthday}/postId/{postId}")]
-        public IActionResult CrateEmployee(string name, string secName, string gender, DateTime birthday, int postId)
+        /// <summary>Отменить задачу.</summary>
+        /// <param name="empliyeeId">ID сотрудника.</param>
+        /// <param name="taskId">ID задачи.</param>
+        /// <returns></returns>
+        [HttpPost("removeTaskForEmployee/employeeId/{employeeId}/taskId/{taskId}")]
+        public IActionResult RemoveEmployeeTask(long empliyeeId, int taskId)
         {
-            Employee newEmp = new Employee(name, secName, gender, birthday, postId);
-            _repository.Create(newEmp);
+            _repository.RemoveTaskForEmployee(empliyeeId, taskId);
             return StatusCode(200);
         }
     }
