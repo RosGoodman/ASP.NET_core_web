@@ -3,7 +3,6 @@ using HomeWork.DAL.Rapositories;
 using HomeWork.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Diagnostics;
 
 namespace HomeWork.Controllers
 {
@@ -26,14 +25,24 @@ namespace HomeWork.Controllers
             return StatusCode(200);
         }
 
-        [HttpGet("getEmployeeById")]
-        public IActionResult GetEmployeeById(long id)
+        [HttpGet("getEmployeeById/id/{id}")]
+        public IActionResult GetEmployeeById([FromRoute]long id)
         {
             var result = _repository.GetById(id);
             return StatusCode(200);
         }
 
-        [HttpPost("name/{name}/secName/{secName}/gender/{gender}/birthday/{birthday}/postId/{postId}")]
+        /// <summary>Получить текущие задачи сотрудника.</summary>
+        /// <param name="id">id сотрудника.</param>
+        /// <returns>Список задач.</returns>
+        [HttpGet("getEmployeeInfo/id/{id}")]
+        public IActionResult GetEmployeeTask(long id)
+        {
+            var result = _repository.GetEmployeeInfoById(id);
+            return StatusCode(200);
+        }
+
+        [HttpPost("createEmployee/name/{name}/secName/{secName}/gender/{gender}/birthday/{birthday}/postId/{postId}")]
         public IActionResult CrateEmployee(string name, string secName, string gender, DateTime birthday, int postId)
         {
             Employee newEmp = new Employee(name, secName, gender, birthday, postId);

@@ -8,6 +8,7 @@ namespace HomeWork.DAL.Rapositories
     {
         List<T> GetAll();
         T GetById(long id);
+        T GetEmployeeInfoById(long id);
         void Create(T item);
     }
 
@@ -15,7 +16,7 @@ namespace HomeWork.DAL.Rapositories
     {
         public void Create(Employee item)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
         }
 
         public List<Employee> GetAll()
@@ -27,6 +28,11 @@ namespace HomeWork.DAL.Rapositories
         {
             Employee emp = new Employee();
             return emp;
+        }
+
+        public Employee GetEmployeeInfoById(long id)
+        {
+            throw new System.NotFiniteNumberException();
         }
     }
 }
