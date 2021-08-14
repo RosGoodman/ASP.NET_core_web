@@ -9,8 +9,8 @@ namespace HomeWork.DAL.Rapositories
         List<T> GetAll();
         T GetById(long id);
         void Create(T item);
-        void SetNewTaskForEmployee(long empliyeeId, int taskId);
-        void RemoveTaskForEmployee(long empliyeeId, int taskId);
+        void SetNewTasksForEmployee(long empliyeeId, List<int> taskId);
+        void RemoveTaskForEmployee(long empliyeeId, List<int> taskId);
     }
 
     public class EmployeeRepository : IEmployeeRepository<Employee>
@@ -41,16 +41,16 @@ namespace HomeWork.DAL.Rapositories
 
         /// <summary>Установить новую задачу для сотрудника.</summary>
         /// <param name="empliyeeId">ID сотрудника.</param>
-        /// <param name="taskId">ID задачи.</param>
-        public void SetNewTaskForEmployee(long empliyeeId, int taskId)
+        /// <param name="tasksId">ID задачи.</param>
+        public void SetNewTasksForEmployee(long empliyeeId, List<int> tasksId)
         {
             throw new System.NotImplementedException();
         }
 
         /// <summary>Отменить задачу сотрудника.</summary>
         /// <param name="empliyeeId">ID сотрудника.</param>
-        /// <param name="taskId">ID задачи.</param>
-        public void RemoveTaskForEmployee(long empliyeeId, int taskId)
+        /// <param name="tasksId">ID задачи.</param>
+        public void RemoveTaskForEmployee(long empliyeeId, List<int> tasksId)
         {
             throw new System.NotImplementedException();
         }

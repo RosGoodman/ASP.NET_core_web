@@ -2,6 +2,7 @@
 using HomeWork.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 
 namespace HomeWork.Controllers
 {
@@ -44,7 +45,7 @@ namespace HomeWork.Controllers
         /// <param name="postId">ID должности.</param>
         /// <returns></returns>
         [HttpPost("createEmployee/name/{name}/secName/{secName}/gender/{gender}/birthday/{birthday}/postId/{postId}")]
-        public IActionResult CrateEmployee(string name, string secName, string gender, DateTime birthday, int postId)
+        public IActionResult CrateEmployee([FromRoute] string name, [FromRoute] string secName, [FromRoute] string gender, [FromRoute] DateTime birthday, [FromRoute] int postId)
         {
             Employee newEmp = new Employee(name, secName, gender, birthday, postId);
             _repository.Create(newEmp);
@@ -52,13 +53,13 @@ namespace HomeWork.Controllers
         }
 
         /// <summary>Установить новую задачу для сотрудника.</summary>
-        /// <param name="empliyeeId">ID сотрудника.</param>
-        /// <param name="taskId">ID задачи.</param>
+        /// <param name="employeeId">ID сотрудника.</param>
+        /// <param name="tasksId">ID задачи.</param>
         /// <returns></returns>
-        [HttpPost("setTaskForEmployee/employeeId/{employeeId}/taskId/{taskId}")]
-        public IActionResult CrateEmployee(long empliyeeId, int taskId)
+        [HttpPost("setTaskForEmployee")]
+        public IActionResult SetTasksForEmployee(long employeeId, [FromBody] List<int> tasks)
         {
-            _repository.SetNewTaskForEmployee(empliyeeId, taskId);
+            _repository.SetNewTasksForEmployee(employeeId, tasks);
             return StatusCode(200);
         }
 
@@ -69,13 +70,13 @@ namespace HomeWork.Controllers
         ///Заключить договор по №заявки
 
         ///Отметить окончание работ, отправка данных (работы, итоговый счет)
-        
+
         ///Закрытие договора (своевременное / досрочное)
-        
+
         ///Отчет по задаче
-        
+
         ///Отчет по инвойсу
 
-        
+
     }
 }

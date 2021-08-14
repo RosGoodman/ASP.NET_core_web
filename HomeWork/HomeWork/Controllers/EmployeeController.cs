@@ -3,6 +3,7 @@ using HomeWork.DAL.Rapositories;
 using HomeWork.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 
 namespace HomeWork.Controllers
 {
@@ -31,10 +32,10 @@ namespace HomeWork.Controllers
         /// <param name="empliyeeId">ID сотрудника.</param>
         /// <param name="taskId">ID задачи.</param>
         /// <returns></returns>
-        [HttpPost("setTaskForEmployee/employeeId/{employeeId}/taskId/{taskId}")]
-        public IActionResult CrateEmployee(long empliyeeId, int taskId)
+        [HttpPost("setTaskForEmployee/employeeId/{employeeId}/tasksId/{tasksId}")]
+        public IActionResult CrateEmployee(long empliyeeId, List<int> tasksId)
         {
-            _repository.SetNewTaskForEmployee(empliyeeId, taskId);
+            _repository.SetNewTasksForEmployee(empliyeeId, tasksId);
             return StatusCode(200);
         }
 
@@ -42,10 +43,10 @@ namespace HomeWork.Controllers
         /// <param name="empliyeeId">ID сотрудника.</param>
         /// <param name="taskId">ID задачи.</param>
         /// <returns></returns>
-        [HttpPost("removeTaskForEmployee/employeeId/{employeeId}/taskId/{taskId}")]
-        public IActionResult RemoveEmployeeTask(long empliyeeId, int taskId)
+        [HttpPost("removeTaskForEmployee/employeeId/{employeeId}/tasksId/{tasksId}")]
+        public IActionResult RemoveEmployeeTask(long empliyeeId, List<int> tasksId)
         {
-            _repository.RemoveTaskForEmployee(empliyeeId, taskId);
+            _repository.RemoveTaskForEmployee(empliyeeId, tasksId);
             return StatusCode(200);
         }
     }
