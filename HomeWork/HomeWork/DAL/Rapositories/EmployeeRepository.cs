@@ -6,7 +6,6 @@ namespace HomeWork.DAL.Rapositories
 {
     public interface IEmployeeRepository<T> where T : class
     {
-        List<T> GetAll();
         T GetById(long id);
         void Create(T item);
         void SetNewTasksForEmployee(long empliyeeId, List<int> taskId);
@@ -22,13 +21,7 @@ namespace HomeWork.DAL.Rapositories
             throw new System.NotImplementedException();
         }
 
-        /// <summary>Получить список сотрудников.</summary>
-        /// <returns>Список сотрудников.</returns>
-        public List<Employee> GetAll()
-        {
-            throw new System.NotImplementedException();
-        }
-
+        //тут предпологается получение своих данных
         /// <summary>Получить сотрудника по ID.</summary>
         /// <param name="empliyeeId">ID сотрудника.</param>
         /// <param name="taskId">ID задачи.</param>

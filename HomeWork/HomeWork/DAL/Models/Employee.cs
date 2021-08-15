@@ -1,6 +1,7 @@
 ﻿
 using HomeWork.DAL.Models;
 using System;
+using System.Collections.Generic;
 
 namespace HomeWork.Models
 {
@@ -9,6 +10,9 @@ namespace HomeWork.Models
     {
         private long _employeeID;   //id сотрудника.
         private int _postId;       //должность.
+
+        /// <summary>Список текущих задач.</summary>
+        public List<int> Tasks { get; set; }
 
         public Employee(string name, string secName, string gender, DateTime birthday, int postId)
             : base (name, secName, gender, birthday)

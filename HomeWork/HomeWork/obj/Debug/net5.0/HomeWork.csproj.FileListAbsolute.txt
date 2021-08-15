@@ -85,3 +85,4 @@ C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложен�
 C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\ref\HomeWork.dll
 C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.pdb
 C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.genruntimeconfig.cache
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\obj\Debug\net5.0\HomeWork.csproj.AssemblyReference.cache
