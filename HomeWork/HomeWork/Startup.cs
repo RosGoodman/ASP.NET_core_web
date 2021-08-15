@@ -3,11 +3,11 @@ using HomeWork.DAL.Rapositories;
 using HomeWork.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using System.Data.SQLite;
 
 namespace HomeWork
 {
@@ -30,6 +30,8 @@ namespace HomeWork
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "HomeWork", Version = "v1" });
             });
 
+            ConfigureServiceConnection(services);   //подключаение бд и миграции
+
             services.AddSingleton<IEmployeeRepository<Employee>, EmployeeRepository>();
             services.AddSingleton<ICustomerRepository, CustomerRepository>();
         }
@@ -37,18 +39,21 @@ namespace HomeWork
         private void ConfigureServiceConnection(IServiceCollection services)
         {
             const string connectionString = "Data Source=Company.db;Version=3;Pooling=true;Max Pool Size=100;";
-            var connection = new SqliteConnection(connectionString);
+            var connection = new SQLiteConnection(connectionString);
             connection.Open();
 
             services.AddFluentMigratorCore().ConfigureRunner(builder => builder
+                //добавляем поддержку SQLite
                 .AddSQLite()
+                //устанавливаем сроку подключения
                 .WithGlobalConnectionString(connectionString)
+                //подсказываем где искать классы с миграциями
                 .ScanIn(typeof(Startup).Assembly).For.Migrations())
                 .AddLogging(lb => lb.AddFluentMigratorConsole());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IMigrationRunner migrationRunner)
         {
             if (env.IsDevelopment())
             {
@@ -67,6 +72,9 @@ namespace HomeWork
             {
                 endpoints.MapControllers();
             });
+
+            //запуск миграции
+            migrationRunner.MigrateUp(1);
         }
     }
 }
