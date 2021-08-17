@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using HomeWork.DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -6,6 +7,8 @@ namespace HomeWork.DAL
 {
     public class DataContext : DbContext
     {
+        public DbSet<PersonEntity> Persons { get; set; }
+
         public DataContext(DbContextOptions<DataContext> options) : base (options)
         {
         }
