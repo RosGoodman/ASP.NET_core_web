@@ -195,3 +195,22 @@ C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_cor
 C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\user252\Desktop\Prog C#\Geek\HomeWorks\ASP.NET-core-web-app\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\HomeWork.StaticWebAssets.xml
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Humanizer.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Npgsql.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\T1007\Desktop\Методички\ASP.NET core. Веб-приложения\ДЗ\ASP.NET_core_web\HomeWork\HomeWork\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
