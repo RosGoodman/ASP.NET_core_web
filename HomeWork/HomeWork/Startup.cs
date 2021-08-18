@@ -33,14 +33,14 @@ namespace HomeWork
             });
 
             //регистрация сервиса dataContext
-            services.AddDbContext<DataContext>(options => 
-            {
-                //использование postgres (UseNpgsql)
-                //строку коннекта передаем через конфигурацию (строка прописанна в appsettings.json)
-                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"),
-                    assembly =>
-                        assembly.MigrationsAssembly("HomeWork.Migrations"));    //путь сохранения миграций (лямбда для сохранения новым проектом)
-            });
+            //services.AddDbContext<DataContext>(options => 
+            //{
+            //    //использование postgres (UseNpgsql)
+            //    //строку коннекта передаем через конфигурацию (строка прописанна в appsettings.json)
+            //    options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"),
+            //        assembly =>
+            //            assembly.MigrationsAssembly("HomeWork.Migrations"));    //путь сохранения миграций (лямбда для сохранения новым проектом)
+            //});
 
             //sqlite
             //ConfigureServiceConnection(services);   //подключаение бд и миграции
