@@ -3,7 +3,7 @@
 namespace HomeWork.DAL.Models
 {
     /// <summary>Модель, описывающая отдельного человека.</summary>
-    public class Person
+    public class Person : BaseEntity
     {
         private string _firstName;  //имя сотрудника.
         private string _secondName; //фамилия сотрудника.
