@@ -1,5 +1,5 @@
 ﻿using HomeWork.DAL.Models;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace HomeWork.DAL
 {

@@ -2,7 +2,7 @@
 
 namespace HomeWork.DAL.Migrator
 {
-    [Migration(1)]
+    //[Migration(1)]
     public class FirstMigration : Migration
     {
         public override void Down()

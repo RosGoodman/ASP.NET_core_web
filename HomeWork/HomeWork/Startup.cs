@@ -44,7 +44,7 @@ namespace HomeWork
 
             services.AddFluentMigratorCore().ConfigureRunner(builder => builder
                 //добавляем поддержку SQLite
-                .AddSQLite()
+                .AddPostgres()
                 //устанавливаем сроку подключения
                 .WithGlobalConnectionString(connectionString)
                 //подсказываем где искать классы с миграциями
@@ -74,7 +74,7 @@ namespace HomeWork
             });
 
             //запуск миграции
-            migrationRunner.MigrateUp(1);
+            migrationRunner.MigrateUp();
         }
     }
 }
