@@ -10,6 +10,8 @@ namespace HomeWork.DAL.Models
         private string _gender;     //пол
         private DateTime _birthday; //дата рождения.
 
+        public Guid Id { get; set; }
+
         public string FirstName
         {
             get { return _firstName; }

@@ -1,8 +1,10 @@
 ﻿using FluentMigrator.Runner;
+using HomeWork.DAL;
 using HomeWork.DAL.Rapositories;
 using HomeWork.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -23,6 +25,9 @@ namespace HomeWork
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //строка подключения прописана в appsettings
+            services.AddDbContext<DataContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped<IDataContext>(provider => provider.GetService<DataContext>());
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -30,27 +35,27 @@ namespace HomeWork
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "HomeWork", Version = "v1" });
             });
 
-            ConfigureServiceConnection(services);   //подключаение бд и миграции
+            //ConfigureServiceConnection(services);   //подключаение бд и миграции
 
             services.AddSingleton<IEmployeeRepository<Employee>, EmployeeRepository>();
             services.AddSingleton<ICustomerRepository, CustomerRepository>();
         }
 
-        private void ConfigureServiceConnection(IServiceCollection services)
-        {
-            const string connectionString = "Data Source=Company.db;Version=3;Pooling=true;Max Pool Size=100;";
-            var connection = new SQLiteConnection(connectionString);
-            connection.Open();
+        //private void ConfigureServiceConnection(IServiceCollection services)
+        //{
+        //    const string connectionString = "Host=localhost;Port=5433;Database=CompanyDB;Username=postgres;Password=123456";
+        //    var connection = new SQLiteConnection(connectionString);
+        //    connection.Open();
 
-            services.AddFluentMigratorCore().ConfigureRunner(builder => builder
-                //добавляем поддержку SQLite
-                .AddSQLite()
-                //устанавливаем сроку подключения
-                .WithGlobalConnectionString(connectionString)
-                //подсказываем где искать классы с миграциями
-                .ScanIn(typeof(Startup).Assembly).For.Migrations())
-                .AddLogging(lb => lb.AddFluentMigratorConsole());
-        }
+        //    services.AddFluentMigratorCore().ConfigureRunner(builder => builder
+        //        //добавляем поддержку SQLite
+        //        .AddPostgres()
+        //        //устанавливаем сроку подключения
+        //        .WithGlobalConnectionString(connectionString)
+        //        //подсказываем где искать классы с миграциями
+        //        .ScanIn(typeof(Startup).Assembly).For.Migrations())
+        //        .AddLogging(lb => lb.AddFluentMigratorConsole());
+        //}
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IMigrationRunner migrationRunner)
@@ -74,7 +79,7 @@ namespace HomeWork
             });
 
             //запуск миграции
-            migrationRunner.MigrateUp(1);
+            //migrationRunner.MigrateUp(1);
         }
     }
 }
