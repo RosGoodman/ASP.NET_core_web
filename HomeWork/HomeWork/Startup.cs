@@ -25,10 +25,6 @@ namespace HomeWork
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //строка подключения прописана в appsettings
-            services.AddDbContext<DataContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddScoped<IDataContext>(provider => provider.GetService<DataContext>());
-
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
